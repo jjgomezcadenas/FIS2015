@@ -1,0 +1,13 @@
+1. Nombre y apellidos: Ramón José Aliaga Varea
+Titulación: Ingeniero
+Tipo de contrato: Contratado
+Duración del contrato: Temporal
+Subproyecto al que pertenece (nombre y apellidos del investigador principal): 
+Vicente Herrero Bosch
+
+2. Nombre y apellidos: Dmytro Mazur
+Titulación: Máster
+Tipo de contrato: En formación
+Duración del contrato: Temporal
+Subproyecto al que pertenece (nombre y apellidos del investigador principal):
+Vicente Herrero Bosch

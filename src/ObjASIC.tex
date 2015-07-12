@@ -1,0 +1,43 @@
+Front-End electronics design.
+
+Integrated Circuits development. Specification, Design, Test and Characterization.
+
+Since the number of output channels from the pressurized chambers must be kept to a minimum a dedicated front-end is likely to be used. Previous ASICs developed by the group can be reused / adapted in an early stage of the project. However a complete redesign of the ASIC is mandatory in order to take full advantage of the new detector characteristics. The followings issues should be addressed by the new design:
+
+
+Increase the maximum capacitance load at the inputs. This will allow using different SiPM models, especially those with large active areas.
+
+
+Reduce electronic noise in order to increase SNR. A higher SNR leads to a higher sensitivity and better energy resolution. Moreover a low noise floor at the front-end could translate in a further reduction of the channels to be acquired since more computation operations can be carried out in the analog domain.
+
+
+ADC integration in the front-end. Although this is one of the most challenging aspects of the new design, it would be the optimal solution to the front-end and would also reduce the DAQ complexity. However there are several trade-offs which have to be evaluated (power consumption-data rate – precision) in order to check the feasibility of this integration.
+
+
+Expandable and coherent system for coincidence detection. The most common technique relies on a high precision clock distribution system to synchronize all the ASICs of the front-end and a TDC (Time-to-Digital-Converter) integrated inside the ASIC which assigns a digital timestamp to every detected event which is transmitted to the DAQ stage along with all the other information (analog or digital). Later a timestamp processing element states the most likely coincidences. Since the desired time resolution is around 150 ps the TDC should have a lower resolution.
+
+
+Extended temperature working range (down to -100 ºC). The cryogenic temperature range is needed since the integrated front-end must be installed inside the liquid Xe chambers.
+
+
+Printed Circuit Boards for Front-End and Sensors
+
+Specific PCBs must be developed for ASIC and Sensors integration. Some peripheral elements will have to be developed such as supply regulation an filtering for ASICs, communication links etc.
+
+
+SiPM Power Supplies and Slow Control elements.
+
+SiPM need a precision voltage supply in order to control characteristics such as gain, dark noise etc. Also some slow control elements must be provided to monitorize chamber temperature, pressure etc. Most of the equipment developed for NEXT experiment can be reused at an early stage of the project.
+
+
+
+
+Data Acquisition System design
+
+The time coincidence feature of the PET system makes de DAQ essentially different from others. The whole design has to be tightly synchronized with resolutions lower than 100 ps. Another important condition to be accomplished by the DAQ architecture is its scalability. Since the project will be divided in several stages of complexity (from a single detector to a full-body PET system) it is desirable to use a modular philosophy which will cut costs and development time down.
+
+
+Testbench Development for Front-End / DAQ systems
+
+Every part of the electronics systems must be tested and validated before its connection in the system in order to detect design / fabrication bugs. As a consequence several testbenches must be developed to do a pass/fail check and characterize its functionality if needed. This is of main importance in the case of the integrated front-end since mixed signal designs (with a very important analog part) cannot be automatically fully tested in the silicon foundry.
+

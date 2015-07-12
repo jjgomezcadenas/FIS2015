@@ -1,0 +1,50 @@
+\noindent\textbf{SUBPROYECTO 1 / SUBPROJECT 1}
+1. Investigador del equipo de investigación que participa en el proyecto/contrato (nombre y apellidos): Vicente Herrero Bosch y Rafael Gadea Gironés
+Referencia del proyecto: FIS2010-21216-C02-02
+Título: Desarrollo de la Electrónica para el Diagnóstico de Enfermedades Neurodegenerativas
+Investigador principal (nombre y apellidos): Ricardo J. Colom Palero
+Entidad financiadora: Ministerio de Economía y Competitividad
+Duración (fecha inicio - fecha fin, en formato DD/MM/AAAA): 01/01/2011  01/01/2014
+Financiación recibida (en euros): 108.900
+Relación con el proyecto que se presenta: Mismo tema
+Estado del proyecto o contrato: Concedido
+
+2. Investigador del equipo de investigación que participa en el proyecto/contrato (nombre y apellidos): Vicente Herrero Bosch y Rafael Gadea Gironés
+Referencia del proyecto: 2212-PAID-0-2010
+Título: Desarrollo de un Prototipo de Procesador Neuronal Integrado con Detección de Disparo en Coincidencia para Aplicaciones de Medicina Nuclear
+Investigador principal (nombre y apellidos): Vicente Herrero Bosch
+Entidad financiadora: Universidad Politécnica de Valencia
+Duración (fecha inicio - fecha fin, en formato DD/MM/AAAA): 01/11/2010  01/11/2012
+Financiación recibida (en euros): 11.000
+Relación con el proyecto que se presenta: Mismo tema
+Estado del proyecto o contrato: Concedido
+
+3. Investigador del equipo de investigación que participa en el proyecto/contrato (nombre y apellidos): Vicente Herrero Bosch 
+Referencia del proyecto: GV/2011/068
+Título: Procesador Neuronal Integrado con Módulo de Trigger para Detectores de Rayos Gamma Basados en Fotomultiplicadores de Silicio
+Investigador principal (nombre y apellidos): Vicente Herrero Bosch
+Entidad financiadora: Generalitat Valenciana
+Duración (fecha inicio - fecha fin, en formato DD/MM/AAAA): 01/01/2011  01/11/2013
+Financiación recibida (en euros): 4.000
+Relación con el proyecto que se presenta: Mismo tema
+Estado del proyecto o contrato: Concedido
+
+4. Investigador del equipo de investigación que participa en el proyecto/contrato (nombre y apellidos): Vicente Herrero Bosch y Rafael Gadea Gironés
+Referencia del proyecto: -
+Título: Diseño de un ASIC para el Front-end de Sistemas PET
+Investigador principal (nombre y apellidos): Vicente Herrero Bosch
+Entidad financiadora: General Equipment for Medical Imaging (Oncovision)
+Duración (fecha inicio - fecha fin, en formato DD/MM/AAAA): 23/12/2011  23/12/2013
+Financiación recibida (en euros): 145.000
+Relación con el proyecto que se presenta: Mismo tema
+Estado del proyecto o contrato: Concedido
+
+5. Investigador del equipo de investigación que participa en el proyecto/contrato (nombre y apellidos): Vicente Herrero Bosch 
+Referencia del proyecto: 
+Título: ASIC escalable para un Detector PET de Enfermedades Neurológicas
+Investigador principal (nombre y apellidos): Vicente Herrero Bosch
+Entidad financiadora: General Equipment for Medical Imaging (Oncovision)
+Duración (fecha inicio - fecha fin, en formato DD/MM/AAAA): 03/09/2009  03/02/2013
+Financiación recibida (en euros): 187.500
+Relación con el proyecto que se presenta: Mismo tema
+Estado del proyecto o contrato: Concedido

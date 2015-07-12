@@ -1,0 +1,6 @@
+SUBPROYECTO 2:
+INVESTIGADOR PRINCIPAL 1 (Nombre y apellidos):
+Vicente Herrero Bosch
+INVESTIGADOR PRINCIPAL 2 (Nombre y apellidos):
+Rafael Gadea Gironés
+TÍTULO: Electronics and DAQ for PETALO (ASIC)
