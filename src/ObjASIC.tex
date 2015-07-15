@@ -1,43 +1,94 @@
-Front-End electronics design.
+\paragraph{Objectives of the ASIC subproject:}
+The ASIC subproject is in charge of providing the front end electronics (FEE), data acquisition (DAQ) and slow controls (SC) for the P2 and P10 apparatus.  In addition the subproject will develop an ASIC for PETALO, optimised for energy resolution, fast time response, and operation at cryogenic (LXe) temperatures and high magnetic field environment.
 
-Integrated Circuits development. Specification, Design, Test and Characterization.
-
-Since the number of output channels from the pressurized chambers must be kept to a minimum a dedicated front-end is likely to be used. Previous ASICs developed by the group can be reused / adapted in an early stage of the project. However a complete redesign of the ASIC is mandatory in order to take full advantage of the new detector characteristics. The followings issues should be addressed by the new design:
-
-
-Increase the maximum capacitance load at the inputs. This will allow using different SiPM models, especially those with large active areas.
-
-
-Reduce electronic noise in order to increase SNR. A higher SNR leads to a higher sensitivity and better energy resolution. Moreover a low noise floor at the front-end could translate in a further reduction of the channels to be acquired since more computation operations can be carried out in the analog domain.
-
-
-ADC integration in the front-end. Although this is one of the most challenging aspects of the new design, it would be the optimal solution to the front-end and would also reduce the DAQ complexity. However there are several trade-offs which have to be evaluated (power consumption-data rate – precision) in order to check the feasibility of this integration.
-
-
-Expandable and coherent system for coincidence detection. The most common technique relies on a high precision clock distribution system to synchronize all the ASICs of the front-end and a TDC (Time-to-Digital-Converter) integrated inside the ASIC which assigns a digital timestamp to every detected event which is transmitted to the DAQ stage along with all the other information (analog or digital). Later a timestamp processing element states the most likely coincidences. Since the desired time resolution is around 150 ps the TDC should have a lower resolution.
-
-
-Extended temperature working range (down to -100 ºC). The cryogenic temperature range is needed since the integrated front-end must be installed inside the liquid Xe chambers.
-
-
-Printed Circuit Boards for Front-End and Sensors
-
-Specific PCBs must be developed for ASIC and Sensors integration. Some peripheral elements will have to be developed such as supply regulation an filtering for ASICs, communication links etc.
-
-
-SiPM Power Supplies and Slow Control elements.
-
-SiPM need a precision voltage supply in order to control characteristics such as gain, dark noise etc. Also some slow control elements must be provided to monitorize chamber temperature, pressure etc. Most of the equipment developed for NEXT experiment can be reused at an early stage of the project.
-
-
-
-
-Data Acquisition System design
-
-The time coincidence feature of the PET system makes de DAQ essentially different from others. The whole design has to be tightly synchronized with resolutions lower than 100 ps. Another important condition to be accomplished by the DAQ architecture is its scalability. Since the project will be divided in several stages of complexity (from a single detector to a full-body PET system) it is desirable to use a modular philosophy which will cut costs and development time down.
-
-
-Testbench Development for Front-End / DAQ systems
-
-Every part of the electronics systems must be tested and validated before its connection in the system in order to detect design / fabrication bugs. As a consequence several testbenches must be developed to do a pass/fail check and characterize its functionality if needed. This is of main importance in the case of the integrated front-end since mixed signal designs (with a very important analog part) cannot be automatically fully tested in the silicon foundry.
-
+%The FEE, DAQ and SC for the initial operation of P2 and P10 will also use the solutions which have been jointly developed between NEXT, CERN and other institutions (who joined later the project) for the CERN RD-51 Collaboration. We describe them briefly here. 
+%
+%\paragraph{A DAQ solution for P2/P10}
+%
+%We propose to use the NEXT/RD-51 DAQ system, named SRS \footnote{ref1,ref2}, which has been licensed to an European company, EicSys, and ported to the industry standard ATCA form factor.
+%
+%The main SRS-ATCA components are: (1) An ATCA chassis, which includes power, cooling fans and a shelf manager unit for remote monitoring and control via Ethernet; (2) ATCA blades, which are carriers with mezzanine connectors, memory, processing units (FPGAs) and I/O connectivity; and (3) mezzanine cards to adapt to a wide range of front ends. Operation with the NEXT-DEMO and NEXT-NEW detectors has shown the stable and reliable operation of SRS-ATCA. 
+%
+%The ADC mezzanines can achieve 60 MHz sampling rate. P2 will have one LXSC6 ($64 \times 6 = 384$~channels) and one LXSC2 ($64 \times 2 = 128$~channels) for a total of 512 channels, which require 22 mezzanines.
+%
+%Each ATCA blade carries two mezzanines. So, 12 ATCA blades are required, fitting in a 12-slot  ATCA chassis. Ot these, 11 blades are used for digitisers (512 channels) and 1 blade for TDCs. The ATCA blades send data to a DAQ PC farm.
+%
+%%DAQ cost for PETALO-2
+%%====================
+%%- 22 mezzanines, 1.532 €/mezz = 33.7 k€
+%%- 11 blades for digitizers + 1 blade for TDC data (optional) @ 5.2 k€/blade =62.4 k€
+%%- Add a 12-slot ATCA chassis @12 k€
+%%- 22 SFP modules for GbE @ 100 €/ud = 2.2 k€
+%%- SUBTOTAL: 110.2 k€
+%
+%%-GRAND DAQ SUBTOTAL: 122.2 k€ (add 15 k€ for a high performance DAQ PC farm - we need to discuss a bit tomorrow on this, as the TDC partition is also to be taken into account!!!)
+%
+%\paragraph{A solution to achieve high time resolution in P2/P10}
+%
+%One of the most promising applications of PETALO is to function as TOF-PET. This requires excellent time resolution. Fortunately, a ready solution also exist. In the near future, EicSys will be upgrading their ATCA blades to include WhiteRabbit\footnote{ref3} nodes in its I/O section. WhiteRabbit is a CERN development used to synchronise thousands of elements in a distributed DAQ and control system across kilometre distances with sub-nanosecond resolution. In small setups like a PET, synchronisation within 200 picoseconds can be achieved with a careful calibration process. WhiteRabbit is an extension to GbE over fibre optics and uses SFP transceiver modules.
+%
+%%A similar approach was developed by a former member of out research group at UPV, showing better performance in some aspects. White Rabbit is open hardware and so the firmware is freely available. Thus, we must invest effort (three months sound reasonable) in reducing as much as possible skew and jitter in the White Rabbit network, as this will be the main limitation to the time resolution in the PET. This implies potential enhancements in the synchronization protocols, in electronic componentes and in network architecture.
+%
+%%A Spanish company based in Granada, named Seven Solutions [ref4], develops and provides solutions based on WhiteRabbit. Apart from the WhiteRabbit nodes in the ATCA blades, which will be equipped by EicSys, we need the following elements from Seven Solutions to enhance the timing resolution for PETALO-2: (1) two 18-ports WhiteRabbit switches, which are a special kind of GbE switches to build the WhiteRabbit network and (2) a White Rabbit plug-in module (named WR-LEN) to provide reliable timestamps for the TDC module which will be explained in the section devoted to PETALO-2 front-end.
+%
+%Consequently the 512 ADC channels needed by P2 can operate across the ATCA chassis with a controlled clock phase and with a reference timestamp. An additional benefit is the availability of 512 TDC channels which will accurately provide TOF and DOI timestamped information, which in turn can be used to trigger the acquisition. Front-end boards for slow and fast paths for 64 channels, thus matching a 64-SiPM dice board, will be designed, as discussed below.
+%
+%%The cost of the mentioned elements is low: 3 k€ for each of the two White Rabbit switches and 600€ for each of the eight White Rabbit plug-in modules, with an additional plug-in module for development.
+%%
+%%Additionally, two SFP modules are required for each front-end card, making a total of sixteen (2 k€) .
+%%
+%%-SUBTOTAL WhiteRabbit electronics: 13.4 k€
+%
+%
+%\paragraph{A front end for P2}
+%
+%The SiPMs which we plan to use in the LXSC (SENSL 6mm C/J series)
+%operating inside the cryostat will have a gain of 10$^7$. According to our initial Monte Carlo simulations, the required dynamic range for P2/P10 ranges from 20 to 2000 photoelectrons.  This can result in a large signal current of several milliamps. With more than 20.000  pixel cells, the SiPM output will be extremely linear. Moreover, dark count noise will be negligible at cryostat temperatures. The only effect to deal with will be optical crosstalk between neighbouring cells. These SiPMs have and additional fast output that could be used in addition to the conventional one (anode or cathode) for the fast timing channel.
+%
+%The SiPM signal will have an extremely fast rising edge with a fast decay time constant of 2 ns followed by a longer (though still fast) tail with a decay time constant of 45 ns. As a result, excellent timing resolution can be achieved with this sensor to produce TOF and DIO information. We plan to amplify (current to voltage conversion with a fast operational amplifier) either the anode or the fast outputs for all SiPMs and connect the amplified signals to TDC chips, having as reference the low-jitter system clock produced by the WhiteRabbit interface. The 8-channel THS788 TDC from Texas Instruments has 13 ps resolution, with 8 ps accuracy (sigma). This would produce very accurate timestamps for the scintillation light. Take into account that 30 ps represents in liquid Xe  approx. 6,6 mm. Eight such TDCs would allow to timestamp 64 channels (one DB).
+%
+%At the same time, good spatial and energy resolution are required. All channels will be converted to voltage with an operational amplifier, stretched to adapt to the sampling rate and adapted to the dynamic range of the ATCA mezzanine digitising card.
+%
+%The slow, analog outputs will be connected via HDMI cables to the ATCA digitiser boards. The TDC outputs will be formatted in an FPGA and sent to either (1) directly to the DAQ PCs via GbE links or (2) to an ATCA blade, adapted via an LVDS digital interface developed for the NEXT detector.
+%
+%\paragraph{Scaling up to PETALO-10}
+%
+%P10 will equip twenty 64-channel dice boards. Re-using the electronics for PETALO-2 (eight dice boards), we need instrumentation for additional twelve dice boards. 
+%%This means additional 1,5 times the cost of the instrumentation for PETALO-2: 300 k€.
+%
+%
+%%As a result, PETALO-2 and PETALO-10 instrumentation costs an overall 500 k€.
+%
+%%The cost of the front end can be estimated as:
+%%
+%%"Slow" and "fast" paths for 512 channels
+%%===============================
+%%A very conservative estimation must be made, as the design is not yet done:
+%%- Components and connectors for the slow path: approx. 30 €/channel = approx. 15.5 k€
+%%- Components and connectors for the fast path: approx.  45 €/channel + 400 €/board*8boards= approx. 26.2 k€
+%%- PCBs: The design could be a stacked 6U board, in order to separate analog and digital paths or could be a single board. In worst case, 16 k€ for PCB manufacturing and component mounting. This is low volume production and so cost per unit is high.
+%%
+%%SiPM bias units
+%%=============
+%%We plan to use a development from the NEXT experiment, a 16-channel programmable bias source for SiPMs with a cost of approx. 1 k€.
+%%
+%%- Front-end sub total is then 51 k€
+%%
+%%Front-end power, mechanical support and cooling
+%%=======================================
+%%- A cabinet worth 1.6 k€
+%%- Fan tray units worth 1 k€
+%%- Four HMP4040 power supplies worth 6.4 k€
+%%- A 6U 19" Eurocard chassis worth 200 €
+%%Power, cabinet and cooling subtotal: 9.2 k€
+%%
+%%Cabling
+%%======
+%%- 128 HDMI cables to connect the front-end to the digitizing cards
+%%- optical fiber for 22 connections
+%%- Subtotal cabling is approx. 3 k€
+%%
+%%GRAND TOTAL is 196 k€ for PETALO-2
+%%
+%
+% 
