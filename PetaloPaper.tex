@@ -101,7 +101,7 @@ Nucl. Instrum. Methods A 569, 863;  {\em Nishikido, F. et al.}, 2005, Jpn J. App
 
 In this paper we propose a (Positron Electron TOF Apparatus based on Liquid xenOn), PETALO, which, like the Waseda apparatus, uses the intense LXe scintillation light as the unique source of signal. However, the availability of a completely new class of light sensors (the so called silicon photomultipliers, or SiPM) make it possible to design a detection cell which does not suffer of the problems found in the Waseda prototype, most of them related with the large bulk of the photomultipliers with respect to the cell size, as well as to their (relatively) poor gain. 
 
-This paper is organised as follows. In section \ref{sec.pet} we describe with some detail the PETALO concept. In section \ref{sec.mc} we show the results of our Monte Carlo simulations, which show the excellent potential of the technology. In section \ref{sec.tof} we discuss the potential of PETALO as TOF device. In \ref{sec.conclu} we conclude. 
+This paper is organised as follows. In section \ref{sec.pet} we describe with some detail the PETALO concept. In section \ref{sec.mc} we show the results of our Monte Carlo simulations, which show the excellent potential of the technology. In section \ref{sec.tof} we discuss the potential of PETALO as TOF device. In section \ref{sec.comp} we note the capability of the device to handle Compton interactions. In \ref{sec.conclu} we conclude. 
 
 \section{The PETALO concept}
 \label{sec.petalo}
@@ -225,6 +225,7 @@ The space resolution obtained for the LXSC6 is better than 1 mm, which is of the
 
 
 \section{PETALO as TOF-PET system}
+\label{sec.tof}
 
 %\begin{figure}[!htb]
 %	\centering
@@ -232,24 +233,26 @@ The space resolution obtained for the LXSC6 is better than 1 mm, which is of the
 %	\caption{\label{fig.tof}  Decay time of LSO and LXe.  }
 %\end{figure}
 
-The quick decay time of xenon and the fast circuitry available in modern SiPMs offers an extraordinary potential for TOF applications. About 2.5\% of the photons are emitted in LXe in the first 50 ps after the interaction. The SiPM recording more signal in one event sees typically  2\% of the total photoelectrons (pes), and therefore it records 5 pes in the first 50 ps, enough to trigger a signal. For comparison, one nanosecond is needed in LSO to emit 2.5\% of the photons. Commercial TOF-PET systems based in LYSO (a proprietary version of LSO) have achieved a system time resolution of 600 ps. Since LXe features {\em both} higher light yield and much faster time response, a system resolution at the level or better than 100 ps appears possible. Thus PETALO could represent a break through in the field of PET-TOF. 
+The quick decay time of xenon and the fast circuitry available in modern SiPMs offers an extraordinary potential for TOF applications. About 2.5\% of the photons are emitted in LXe in the first 50 ps after the interaction. The SiPM recording more signal in one event sees typically  2\% of the total photoelectrons (pes), and therefore it records 5 pes in the first 50 ps, enough to trigger a signal. For comparison, one nanosecond is needed in LSO to emit 2.5\% of the photons. Commercial TOF-PET systems based in LYSO (a proprietary version of LSO) have achieved a system time resolution of 600 ps. Since LXe features {\em both} higher light yield and much faster time response, a system resolution at the level or better than 200-250 ps appears possible. Thus PETALO could represent a break through in the field of PET-TOF. 
 
 \section{Resolving Compton interactions}
+\label{sec.comp}
 
 Photoelectric interactions are a relatively small fraction of the total number of interactions in LXe (22\%) as well as in SSDs (for example, 33\% in LSO). The bulk of Compton interactions can result either in contained (when the scatter gamma produces a cascade that does not escape the detector) or non contained events. Non contained events do not deposit the full energy of the gamma in the detector and can be rejected. However, the large fraction of contained Compton events (60\% for the LXSC and larger for denser SSDs, such as LSO) introduce a significant distortion of the position in the case of conventional SSDs. Recall that conventional SSDs do not measure the $z$~(longitudinal) coordinate, introducing parallax errors. In addition, when a multiple-site Compton interaction occur in the detector, the transverse ($x,y$) coordinates are distorted, since the system only measures the average coordinate. 
 
 Instead, in the LXSC, multiple-site hits are easily identified (the system measures true 3D points), and can be separated to a distance of the order of the detector pitch. This capability of separating photoelectric and Compton events in the LXSC can be further exploited in the case of 2-site Compton interactions. Resolving the position and the energy of both gammas with good resolution, allows the LXSC to operate as a {\em Compton Telescope}, taking advantage of Compton kinematics to further restrict the point of emission of the photons. 
 
-\section{Nuclear Magnetic Resonance compatibility}
+%\section{Nuclear Magnetic Resonance compatibility}
+%\label{sec.nmr}
+%The LXSC  is built using non-magnetic materials, and unlike PMTs, SiPMs can operate in very high magnetic fields. Therefore PETALO can operate inside the very intense magnetic field generated by NMR devices. Furthermore, a NMS apparatus requires a large cryostat which can also accommodate the LXSC modules that make up PETALO. The technology offers, therefore, the possibility of building a fully NMR compatible device.  
 
-The LXSC  is built using non-magnetic materials, and unlike PMTs, SiPMs can operate in very high magnetic fields. Therefore PETALO can operate inside the very intense magnetic field generated by NMR devices. Furthermore, a NMS apparatus requires a large cryostat which can also accommodate the LXSC modules that make up PETALO. The technology offers, therefore, the possibility of building a fully NMR compatible device.  
-
-\section{Summary: PETALO, a break through in PET technology based in the LXSC}
+\section{Conclusions}
+\label{sec.conclu}
 
 To summarise, PETALO offers the following advantages:
 \begin{enumerate}
 \item Light yield higher than any conventional SSD.
-\item Excellent energy resolution (2.5 -- 5 \% FWHM depending on configuration of LXSC and of light yield). 
+\item Excellent intrinsic energy resolution (2.5 -- 3.5 \% FWHM depending on configuration of LXSC and of light yield). 
 \item Excellent spatial resolution (1-2 mm in the three coordinates, minimising parallax error).
 \item Capable of detecting multi-site Compton events. Thus suitable as Compton telescope.
 \item Very fast time response, resulting in enhanced sensitivity (reduced number of random coincidences) and making it possible break-through TOF application. 
@@ -257,11 +260,11 @@ To summarise, PETALO offers the following advantages:
 \item Competitive cost. The LXSC2 version of PETALO would cost today roughly half of the cost of the equivalent LSO unit. With the cost of SiPMs falling, the  cost of PET scanners will soon be fully dominated by the material of choice. Xenon is much cheaper than LSO and thus a large-scale apparatus (full body PET) is conceivable. 
 \end{enumerate}
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.4]{img/SAP.png}
-	\caption{\label{fig.smallPet} A conceptual drawing of a small animal PET, based in 9 LXSC. }
-\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[scale=0.4]{img/SAP.png}
+%	\caption{\label{fig.smallPet} A conceptual drawing of a small animal PET, based in 9 LXSC. }
+%\end{figure}
 
 %\begin{figure}[!htb]
 %	\centering
@@ -269,5 +272,5 @@ To summarise, PETALO offers the following advantages:
 %	\caption{\label{fig.largePet} A conceptual drawing of a a human PET, based in several rings, each one containing 24 LXSC. A full body PET covering 160 cm would require 480 LXSCs. }
 %\end{figure}
 
-The new invention called the LXSC is the keystone PETALO. As an illustration Figure \ref{fig.smallPet} shows a conceptual drawing of a small PET apparatus, based in 9 LXSCs. 
+%The new invention called the LXSC is the keystone PETALO. As an illustration Figure \ref{fig.smallPet} shows a conceptual drawing of a small PET apparatus, based in 9 LXSCs. 
 \end{document}
