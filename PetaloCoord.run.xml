@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>PetaloPaper.aux</file>
-      <file>PetaloPaper-blx.bib</file>
+      <file>PetaloCoord.aux</file>
+      <file>PetaloCoord-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>PetaloPaper.bbl</file>
+      <file>PetaloCoord.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-compat.def</file>
@@ -66,22 +66,23 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>PetaloPaper</infile>
+      <infile>PetaloCoord</infile>
     </cmdline>
     <input>
-      <file>PetaloPaper.aux</file>
+      <file>PetaloCoord.aux</file>
     </input>
     <output>
-      <file>PetaloPaper.bbl</file>
+      <file>PetaloCoord.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>PetaloPaper.bbl</file>
+      <file>PetaloCoord.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>PetaloPaper.aux</file>
-      <file>PetaloPaper-blx.bib</file>
+      <file>PetaloCoord.aux</file>
+      <file>PetaloCoord-blx.bib</file>
     </requires>
     <requires type="editable">
+      <file>biblio.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>
