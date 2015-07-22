@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.12)  21 JUL 2015 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.12)  21 JUL 2015 19:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1846,68 +1846,68 @@ l.30 \item {
 [2]) (./src/GrantsAsic2.tex
 File: img/miniLogo.jpg Graphic file (type jpg)
  <use img/miniLogo.jpg>
-Package pdftex.def Info: img/miniLogo.jpg used on input line 18.
+Package pdftex.def Info: img/miniLogo.jpg used on input line 29.
 (pdftex.def)             Requested size: 96.73808pt x 25.6073pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 29.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 \item {
-            \bf Referencia del proyecto / Project number}: 2212-PAID-0-2010
-[3]
+l.29 \item {
+            \bf Referencia del proyecto / Project number}: GV/2011/068 [3])
+(./src/GrantsIMG.tex
 File: img/miniLogo.jpg Graphic file (type jpg)
  <use img/miniLogo.jpg>
-Package pdftex.def Info: img/miniLogo.jpg used on input line 58.
+Package pdftex.def Info: img/miniLogo.jpg used on input line 10.
 (pdftex.def)             Requested size: 96.73808pt x 25.6073pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 58.
- [4]) (./src/GrantsIMG.tex
+(babel)             in language  on input line 10.
+ [4]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 21.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -1916,32 +1916,32 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 File: img/miniLogo.jpg Graphic file (type jpg)
 
 <use img/miniLogo.jpg>
-Package pdftex.def Info: img/miniLogo.jpg used on input line 37.
+Package pdftex.def Info: img/miniLogo.jpg used on input line 48.
 (pdftex.def)             Requested size: 96.73808pt x 25.6073pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 48.
  [5])
 File: img/miniLogo.jpg Graphic file (type jpg)
  <use img/miniLogo.jpg>
@@ -2079,13 +2079,13 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.73 
-      [3] <img/DC.png, id=125, 874.26625pt x 318.18875pt>
+      [3] <img/DC.png, id=124, 874.26625pt x 318.18875pt>
 File: img/DC.png Graphic file (type png)
  <use img/DC.png>
 Package pdftex.def Info: img/DC.png used on input line 102.
 (pdftex.def)             Requested size: 437.13205pt x 159.09398pt.
 
-<img/lxsc.png, id=128, 920.43875pt x 454.69875pt>
+<img/lxsc.png, id=127, 920.43875pt x 454.69875pt>
 File: img/lxsc.png Graphic file (type png)
  <use img/lxsc.png>
 Package pdftex.def Info: img/lxsc.png used on input line 117.
@@ -2163,7 +2163,7 @@ been already used, duplicate ignored
                    \relax 
 l.146 
        [5 <./img/lxsc.png>]
-<img/energyResolution.png, id=157, 991.705pt x 338.26375pt>
+<img/energyResolution.png, id=156, 991.705pt x 338.26375pt>
 File: img/energyResolution.png Graphic file (type png)
 
 <use img/energyResolution.png>
@@ -2208,7 +2208,7 @@ been already used, duplicate ignored
                    \relax 
 l.183 
        [6 <./img/energyResolution.png>]) (./src/PreviousWork.tex
-<img/KDB2.png, id=169, 874.26625pt x 319.1925pt>
+<img/KDB2.png, id=168, 874.26625pt x 319.1925pt>
 File: img/KDB2.png Graphic file (type png)
  <use img/KDB2.png>
 Package pdftex.def Info: img/KDB2.png used on input line 13.
@@ -2302,7 +2302,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 8.
  [9]) (./src/MetodologyDET.tex
-<img/PETALO-0.jpg, id=224, 1305.87875pt x 725.71124pt>
+<img/PETALO-0.jpg, id=223, 1305.87875pt x 725.71124pt>
 File: img/PETALO-0.jpg Graphic file (type jpg)
  <use img/PETALO-0.jpg>
 Package pdftex.def Info: img/PETALO-0.jpg used on input line 7.
@@ -2312,7 +2312,7 @@ Overfull \hbox (1.82033pt too wide) in paragraph at lines 7--8
  [][] 
  []
 
-<img/PETALO-4.JPG, id=225, 1305.87875pt x 725.71124pt>
+<img/PETALO-4.JPG, id=224, 1305.87875pt x 725.71124pt>
 File: img/PETALO-4.JPG Graphic file (type jpg)
  <use img/PETALO-4.JPG>
 Package pdftex.def Info: img/PETALO-4.JPG used on input line 13.
@@ -2351,7 +2351,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 18.
  [10 <./img/PETALO-0.jpg> <./img/PETALO-4.JPG>]
-<img/PDETWF.png, id=243, 1231.60126pt x 880.28876pt>
+<img/PDETWF.png, id=242, 1231.60126pt x 880.28876pt>
 File: img/PDETWF.png Graphic file (type png)
  <use img/PDETWF.png>
 Package pdftex.def Info: img/PDETWF.png used on input line 29.
@@ -2449,7 +2449,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 74.
  [13]
-<img/ASICWF.png, id=281, 1222.5675pt x 619.31375pt>
+<img/ASICWF.png, id=280, 1222.5675pt x 619.31375pt>
 File: img/ASICWF.png Graphic file (type png)
  <use img/ASICWF.png>
 Package pdftex.def Info: img/ASICWF.png used on input line 110.
@@ -2488,7 +2488,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 116.
  [14 <./img/ASICWF.png>]) (./src/MetodologyIMG.tex
-<img/ImgWF.png, id=294, 897.3525pt x 352.31625pt>
+<img/ImgWF.png, id=293, 897.3525pt x 352.31625pt>
 File: img/ImgWF.png Graphic file (type png)
  <use img/ImgWF.png>
 Package pdftex.def Info: img/ImgWF.png used on input line 6.
@@ -2583,7 +2583,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 15.
  [17])
 (./src/InfraLaFe.tex) (./src/Crono.tex
-<img/Crono.png, id=345, 887.315pt x 302.12875pt>
+<img/Crono.png, id=344, 887.315pt x 302.12875pt>
 File: img/Crono.png Graphic file (type png)
  <use img/Crono.png>
 Package pdftex.def Info: img/Crono.png used on input line 4.
@@ -2796,8 +2796,8 @@ Package logreq Info: Writing requests to 'PetaloCoord.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33955 strings out of 493093
- 655969 string characters out of 6134989
+ 33954 strings out of 493093
+ 655962 string characters out of 6134989
  860477 words of memory out of 5000000
  36423 multiletter control sequences out of 15000+600000
  66851 words of font info for 242 fonts, out of 8000000 for 9000
@@ -2813,10 +2813,10 @@ ist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on PetaloCoord.pdf (32 pages, 2575583 bytes).
+Output written on PetaloCoord.pdf (32 pages, 2575247 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 216 named destinations out of 1000 (max. 500000)
+ 488 PDF objects out of 1000 (max. 8388607)
+ 421 compressed objects within 5 object streams
+ 215 named destinations out of 1000 (max. 500000)
  37956 words of extra memory for PDF output out of 42996 (max. 10000000)
 
